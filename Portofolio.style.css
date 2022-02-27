@@ -10,19 +10,22 @@ p{
  color: #03333f;
 }
 .Tampilan{
+ font-family: 'Smooch Sans', sans-serif;
   background-color: #18fffd;
   border-radius: 20px;
   color: #0513ff;
 }
 .Navigasi {
+  
   width: 100%;
-  font-size: 70%;
+  font-size: 20px%;
   text-align: right;
   display: inline-block;
   background-color: #ff2020;
   padding-bottom: 10px;
   padding-top: 10px;
   border-radius: 10px;
+  box-shadow: 0 0 5px 1px black;
 }
 .Navigasi a{
   text-decoration: none;
@@ -30,28 +33,35 @@ p{
   color: #4ff6fe;
 }
 .Profil {
+ box-shadow: 0 0 1px black;
   text-align: center;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
 }
 .Profil h2{
- padding-top: -100px;
  margin: 0;
 }
 .Profil img{
  border-radius: 50%;
- margin: 0;
+ margin: 2px;
+ box-shadow: 0 0 5px red;
 }
 .Profil p{
  margin: 0;
 }
 .Portfolio {
+ border-radius: 10px;
+ box-shadow: 0 0 1px black;
   text-align: center;
 }
 .Servis{
+ border-radius: 10px;
+ box-shadow: 0 0 1px black;
   text-align: center;
 }
 .WyMe {
+ border-radius: 10px;
+ box-shadow: 0 0 1px black;
   text-align: center;
 }
 .WyMe p{
@@ -70,5 +80,9 @@ p{
 }
 .Copyright input{
  color: white;
- width: 33%;
+ width: 75%;
+}
+.kelamin{
+ background-color: black;
+ text-align: center;
 }
