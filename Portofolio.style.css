@@ -1,0 +1,73 @@
+div {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+body{
+ background-color: black;
+}
+p{
+ color: #03333f;
+}
+.Tampilan{
+  background-color: #18fffd;
+  border-radius: 20px;
+  color: #0513ff;
+}
+.Navigasi {
+  width: 100%;
+  font-size: 70%;
+  text-align: right;
+  display: inline-block;
+  background-color: #ff2020;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  border-radius: 10px;
+}
+.Navigasi a{
+  text-decoration: none;
+  padding: 1px;
+  color: #4ff6fe;
+}
+.Profil {
+  text-align: center;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.Profil h2{
+ padding-top: -100px;
+ margin: 0;
+}
+.Profil img{
+ border-radius: 50%;
+ margin: 0;
+}
+.Profil p{
+ margin: 0;
+}
+.Portfolio {
+  text-align: center;
+}
+.Servis{
+  text-align: center;
+}
+.WyMe {
+  text-align: center;
+}
+.WyMe p{
+ color: #000000;
+}
+.Copyright {
+  background-color: black;
+  text-align: center;
+  border-radius: 20px;
+}
+.Copyright p{
+ color: #05cdff;
+}
+.Copyright a{
+ color: #2df2fc;
+}
+.Copyright input{
+ color: white;
+}
