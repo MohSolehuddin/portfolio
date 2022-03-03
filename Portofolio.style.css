@@ -1,40 +1,69 @@
-div {
+div{
   margin-left: auto;
   margin-right: auto;
-  width: 100%;
+  width: 95%;
+  border: 2px solid black;
+  text-align:center;
+  border-radius: 10px;
 }
 body{
- background-color: black;
+ margin: 0;
 }
 p{
- color: #03333f;
+  font-family: 'Smooch Sans', sans-serif;
+  color: #03333f;
 }
+h2{
+  font-family: 'Indie Flower', cursive;
+  color: red;
+}
+h3{
+  font-family: 'Lobster Two', cursive;
+  color: red;
+}
+
 .Tampilan{
- font-family: 'Smooch Sans', sans-serif;
-  background-color: #18fffd;
+  margin: 0;
+  background-image: linear-gradient(135deg,#18fffd,#60ccff);
   border-radius: 20px;
   color: #0513ff;
-}
-.Navigasi {
-  
   width: 100%;
-  font-size: 20px%;
-  text-align: right;
-  display: inline-block;
-  background-color: #ff2020;
-  padding-bottom: 10px;
-  padding-top: 10px;
-  border-radius: 10px;
-  box-shadow: 0 0 5px 1px black;
+}
+
+.Navigasi {
+  font-family: 'Indie Flower', cursive;
+  align-items: center;
+  border-radius: 0;
+  z-index: 100;
+  width: 100%;
+  position: fixed;
+  font-size: 10px;
+  display: flex;
+  background-image: linear-gradient(45deg,#ff2020,black);
+  box-shadow: 0 0 10px black;
+ justify-content: space-evenly;
+}
+.Navigasi h1{
+  color: white;
+  font-size: 20px;
 }
 .Navigasi a{
   text-decoration: none;
-  padding: 1px;
   color: #4ff6fe;
+  transition: .3s;
+  font-size: 10px;
 }
+.Navigasi a:hover{
+ color:white;
+ text-decoration: underline;
+}
+.x{
+  width: 100%;
+  height: 55px;
+}
+
 .Profil {
- box-shadow: 0 0 1px black;
-  text-align: center;
+  box-shadow: 0 0 1px black;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
 }
@@ -45,6 +74,12 @@ p{
  border-radius: 50%;
  margin: 2px;
  box-shadow: 0 0 5px red;
+ transition: 4s;
+}
+.Profil img:hover{
+  border: 5px solid red;
+ transform: rotate(7200deg) scale(1.2);
+ background-color: black;
 }
 .Profil p{
  margin: 0;
@@ -52,28 +87,22 @@ p{
 .Portfolio {
  border-radius: 10px;
  box-shadow: 0 0 1px black;
-  text-align: center;
 }
 .Servis{
  border-radius: 10px;
  box-shadow: 0 0 1px black;
-  text-align: center;
 }
 .WyMe {
  border-radius: 10px;
  box-shadow: 0 0 1px black;
-  text-align: center;
-}
-.WyMe p{
- color: #000000;
 }
 .Copyright {
   background-color: black;
-  text-align: center;
-  border-radius: 20px;
+  border-top-left-radius:20px;
+  border-top-right-radius: 20px;
 }
 .Copyright p{
- color: #05cdff;
+ color: white;
 }
 .Copyright a{
  color: #2df2fc;
@@ -83,6 +112,6 @@ p{
  width: 75%;
 }
 .kelamin{
+  color: white;
  background-color: black;
- text-align: center;
 }
