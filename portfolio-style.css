@@ -1,3 +1,6 @@
+html{
+  scroll-behavior: smooth;
+}
 *{
   margin: 0;
   padding: 0;
@@ -123,32 +126,28 @@ section div div{
   box-shadow: 0 0 1px white;
 }
 /*Responsive*/
-@media screen and (max-width: 1024px){
-  .TitikTiga{
-    display: none;
-    
-  }
-  .snav{
-    height: 80px;
-  }
-  nav{
-    padding: 10px 30px;
-    font-size: 2.5em;
-    justify-content: space-between;
-    height: 60px;
-    
-  }
-  section div div img{
-    width: 20%;
-    padding: 20px 0;
-  }
-  h1,h2,h3,h5,p{
-    font-size: 1.5em;
-  }
-  .Media-Sosial a img{
-    width: 50px;
-    height: 50px;
-  }
+.TitikTiga{
+  display: none;
+}
+.snav{
+  height: 80px;
+}
+nav{
+  padding: 10px 30px;
+  font-size: 2.5em;
+  justify-content: space-evenly;
+  height: 60px;
+}
+section div div img{
+  width: 20%;
+  padding: 20px 0;
+}
+h1,h2,h3,h5,p{
+  font-size: 1.5em;
+}
+.Media-Sosial a img{
+  width: 50px;
+  height: 50px;
 }
 @media screen and (max-width: 768px){
   .TitikTiga{
