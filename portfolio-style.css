@@ -126,19 +126,19 @@ section div div{
   box-sizing: 0 0 1px white;
 }
 /*Responsive*/
-@media screen and (max-width: 1000px){
- .TitikTiga{
+@media (min-width: 1000px){
+  .TitikTiga{
    display: none;
- }
- .snav{
+  }
+  .snav{
    height: 80px;
- }
- nav{
+  }
+  nav{
    padding: 10px 30px;
    font-size: 2.5em;
    justify-content: space-between;
    height: 60px;
- }
+  }
   section div div img{
     width: 20%;
     padding: 20px 0;
