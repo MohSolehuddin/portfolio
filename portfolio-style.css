@@ -190,7 +190,7 @@ section div div{
     height: 30px;
 }
 }
-@media screen and (min-width: 1000px){
+@media screen and (max-width: 1000px){
  .TitikTiga{
    display: none;
  }
