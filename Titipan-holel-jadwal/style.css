@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.judul {
+    text-align: center;
+    font-size: 22px;
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    margin: 20px;
+    overflow-x: none;
+}
+
+.container {
+    background-image: linear-gradient( #a3c9e2, #9618f7);
+    border: 3px solid rgb(0, 0, 0);
+    align-content: center;
+    border-radius: 30px;
+    padding: 20px;
+    border-top: 5px solid black;
+    border-right: 4px solid black;
+    box-sizing: border-box;
+    margin: auto;
+    box-shadow: 13px -14px 10px -6px rgba(0, 0, 0, 0.44);
+    -webkit-box-shadow: 13px -14px 10px -6px rgba(0, 0, 0, 0.44);
+    -moz-box-shadow: 13px -14px 10px -6px rgba(0, 0, 0, 0.44);
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+
+.senin,
+.selasa,
+.rabu,
+.kamis,
+.jumat {
+    text-align: center;
+    padding: 20px;
+    font-family: 'Aladin', cursive;
+    letter-spacing: 4px;
+    font-size: 20px;
+    color: white;
+    border: 1px solid rgb(245, 238, 238);
+    background-image: linear-gradient(#65799b, #5e2563);
+    align-items: center;
+    margin: auto;
+    width: 100px;
+    margin-top: 50px;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.senin:hover {
+    padding: 20px 20px 50px 0px;
+    transition: 0.3s;
+    background-color: rgb(161, 161, 161);
+}
+
+.selasa:hover {
+    padding: 20px 20px 50px 0px;
+    transition: 0.3s;
+    background-color: rgb(161, 161, 161);
+}
+
+.rabu:hover {
+    padding: 20px 20px 50px 0px;
+    transition: 0.3s;
+    background-color: rgb(161, 161, 161);
+}
+
+.kamis:hover {
+    padding: 20px 20px 50px 0px;
+    transition: 0.3s;
+    background-color: rgb(161, 161, 161);
+}
+
+.jumat:hover {
+    padding: 20px 20px 50px 0px;
+    transition: 0.3s;
+    background-color: rgb(161, 161, 161);
+}
