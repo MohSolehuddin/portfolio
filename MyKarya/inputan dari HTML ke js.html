@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title></title>
+  </head>
+  <bhead>
+    <input type="text" id="nama" />
+    <button type="button" onclick="cetak()">Cetak</button>
+    <p id="demo"></p>
+    <script>
+    function cetak() {
+      var nama = document.getElementById("nama").value;
+      document.getElementById("demo").innerHTML = "nama saya adalah"+"<b>"+nama+"</b>"+"Tampan ";
+    }</script>
+  </bhead>
+</html>
