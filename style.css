@@ -1,0 +1,54 @@
+.pfl-Spin{
+  max-width: 150px;
+  position: relative;
+}
+.pfl-Spin img{
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  display: block;
+}
+.pfl-Spin::before{
+  content: "";
+  position: absolute;
+  inset: -15px;
+  border: 6px solid white;
+  border-top-color: blue;
+  border-bottom-color: blue;
+  border-radius: 50%;
+  z-index: -1;
+  animation: spin 3s linear infinite;
+}
+@keyframes spin{
+  0%{
+    border-bottom-color: white;
+    border-top-color: blue;
+  }
+  50%{
+    border-bottom-color: black;
+    border-top-color: red;
+    transform: rotate(720deg);
+  }
+  100% {
+    border-bottom-color: white;
+    border-top-color: blue;
+  }
+}
+
+.SizeImg {
+  width: 75%;
+  border: 3px solid black ;
+}
+.w{
+  width: 90%;
+  margin: auto ;
+}
+@media(min-width: 765px){
+  .SizeImg{
+    margin: auto;
+    width: 25%;
+  }
+  .w{
+  width: 75%;
+}
+}
