@@ -1,0 +1,174 @@
+:root{
+  --bc: #fff;
+  --fc: #1000ff;
+  --sc: #00ffff;
+  --gradient: linear-gradient(340deg, #00ffff 0%, #1000ff 100%);
+  --gradient2: linear-gradient(170deg,#00ffff 0%, #1000ff 100%);
+;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  background-color: var(--bc);
+  width: 100vw;
+  overflow-x: hidden ;
+}
+
+main{
+  margin-top: 50px;
+  padding: 0;
+}
+.Profil{
+  background-color: var(--sc);
+  background-image: var(--gradient);
+  margin-bottom: 50px;
+}
+.Profil img.logo{
+  width: 150px;
+  height: 150px;
+  border: 10px solid #1000ff;
+  box-shadow: 0 0 10px #00ffff;
+}
+#profesi {
+  color: #00ffff;
+}
+.kolom{
+  display: flex;
+  width: 90vw;
+  margin: auto;
+  justify-content: center;
+  flex-wrap: wrap ;
+}
+.isiKolom,
+.isiKolom2{
+  width: 90%;
+}
+.footer{
+  background-color: var(--sc);
+  background-image: var(--gradient2);
+}
+.media{
+  height: 500px;
+}
+.spasi{
+  height: 40px;
+}
+.Produk{
+  padding-top: 200px;
+  text-align: center;
+  
+}
+.mediaSosial a {
+  width: 75px;
+}
+.mycard{
+  padding: 40px 0;
+  background-image: var(--gradient);
+  border: .1px solid black;
+  border-top-left-radius: 48px;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 48px;
+  border-bottom-left-radius: 2px;
+  margin-bottom: 30px;
+  color: var(--sc);
+  min-height: 500px;
+  
+}
+.mybtn{
+  display: inline-block;
+  min-width: 90%;
+  width: 90%;
+  text-decoration: none;
+  border: .1px solid black;
+  padding: 20px 0;
+  background-color: #00ffff;
+  color:  #000;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 2em;
+  transition: .3s;
+}
+.mybtn:hover{
+  color: #00ffff;
+  background-color: #ff0000;
+  border: 5px solid #ff0000;
+}
+
+
+
+/** ANIMATION AND Effect **/
+.textRainbow{
+  background-image: linear-gradient(340deg, #fff,#00ffff);
+  background-clip: border-box;
+  background-clip: text;
+  -webkit-background-clip: text;
+  text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+.fadeMuncul{
+  animation-delay: .5s;
+  animation: FadeMuncul 1.5s linear;
+}
+@keyframes FadeMuncul{
+  0%{
+    transform: scale(.5) translate(-100%) translateY(-100%);
+  }
+  50
+    transform: scale(1.15) translate(5%);
+  }
+  100%{
+    transform: scale(1) translate(0%) translateY(0%);
+  }
+}
+.goncangan{
+  animation-delay: 3s;
+  animation: goncangan 1s ease-in-out infinite alternate;
+}
+@keyframes goncangan{
+  0%{
+    transform: translateX(-2px);
+  }
+  25%{
+    transform: translateY(2px);
+  }
+  50%{
+    transform: translateX(2px);
+  }
+  100%{
+    transform: translate(-2px);
+  }
+}
+.efekRotasi{
+  animation: efekRotasi 1s ease-in-out infinite alternate;
+}
+@keyframes efekRotasi{
+  0%{
+    transform: rotate(1deg);
+  }
+  100%{
+    transform: rotate(-1deg);
+  }
+}
+
+
+
+/** Responsive**/
+@media screen and (min-width: 1000px){
+  body,h3,h6,a{  
+    font-size: 1.5em;
+  }
+  .kolom{
+    width: 80%;
+    justify-content: space-between;
+    
+  }
+  .isiKolom{
+    width: 45%;
+    margin-top: 50px;
+  }
+  .isiKolom2{
+    margin: auto;
+    margin-top: 50px;
+  }
+}
