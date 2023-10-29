@@ -4,10 +4,14 @@
   <meta charset="UTF-8" />
   <meta http-equiv="refresh" content="text/html;charset=UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
+  
   <!-- Instalasi bootstrap css-->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
   <!-- Akhir Instalasi bootstrap css -->
+  
+  <!-- Instalasi cdn framework mengetik -->
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+  <!-- akhir Instalasi cdn framework mengetik -->
 
   <!-- Instalasi AOS -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -23,6 +27,7 @@
   <title>Web Portofolio</title>
   </head>
   <body style="font-family: 'Kdam Thmor Pro', sans-serif;">
+  <script src="https://unpkg.com/scrollreveal"></script>
   <!-- Instalasi bootstrap js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
     <!-- Akhir Instalasi bootstrap js -->
@@ -32,191 +37,112 @@
     <!-- Akhir Instalasi js  ppribadi-->
 
     <!-- Runer AOS -->
+    
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init({
       delay: 100,
-      duration: 700,
+      duration: 850,
       once: false
       });
     </script>
     <!-- Akhir Runer AOS -->
-
-    <nav class="navbar navbar-dark fixed-top" style="background-color: #1000ff; ">
-      <div class="container-fluid">
-      <a class="textRainbow navbar-brand " data-aos="fade-left" href="#">MOH. SOLEHUDDIN</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#Profil">Profil</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#Skill">Skill</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#Portofolio">Portofolio</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#Produk">Produk</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#MedSos">Media Sosial</a>
-        </li>
-        </ul>
-        <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
-      </div>
-    </div>
-  </nav>
+  
+</body>
   <main class="main">
     <!-- Profil -->
     <section id="Profil" class="Profil text-center pt-4" style="color: white;">
-      <div id="Profil"></div>
-      <div class="spasi"></div>
       <div>
-        <img class="rounded-circle mb-3 logo" src="property/logo.png" alt="" />
-        <h3 data-aos="fade-down">MOH. SOLEHUDDIN</h3>
-        <h6 id="profesi">Web Developer | Content Creator</h6>
-      </div>
-      <div class="kolom mt-5 text-center">
-        <div class="isiKolom mb-4" data-aos="fade-up" data-aos-delay="200">
-          Assalamualaikum... Perkenalkan nama saya Moh. Solehuddin saya adalah seorang Programmer pemula yang sudah belajar <span id="Waktu" style="color: #00ffff;"></span>
+        <!-- blob decoration -->
+        <div class="d-flex justify-content-center">
+          <img src="icon/blob.svg" alt="blob decoration" class="profil-blob">
         </div>
-        <script>
-          waktu();
-        </script>
-        <div class="isiKolom mb-4" data-aos="fade-up" data-aos-delay="300">
-          Saya memiliki berberapa keahlian mulai dari html, css, JavaScript, python walaupun saya belum begitu ahli di bidang tersebut namun daya akan terus belajar demi meningkatkan skill pemrograman saya
-        </div>
-        <div class="isiKolom2 mb-4" data-aos="fade-up" data-aos-delay="400">
-          Website Portofolio ini saya buat dengan html,css,JavaScript,dan beberapa fremework dan alat² bantu lainnya seperti bootstrap,Google Fonts, dan lainnya. website ini saya buat untuk memperlihatkan seberapa jauh kemampuan pemrograman saya, dengan Portofolio ini saya harap anda bisa yakin dan mempercayai saya tentang projeck atau job yang ingin anda berikan
+        <!-- ,membuat class margin-custom untuk mengatur desain -->
+        <div class="margin-custom">
+          <img class="rounded-ccircle mb-3 logo d-flex justify-content-center m-auto" src="property/solehuddin.png" alt="profil img" />
+          <!-- my name -->
+          <h3 class="my-name"><span class="MOH-SOLEHUDDIN textRainbow"></span></h3>
+          <!-- my title -->
+          <h6 id="profesi"><span class="im mb-4">I'M </span><span class="typing"></span></h6>
         </div>
       </div>
-      <img src="property/start.svg" alt=" dekorasi awalan website" class="start">
-    </section>
-    <!-- Skill -->
-    <section id="Skill" style="height: 60px;"></section>
-    <section class="skill text-center mb-5" data-aos="fade-right">
-      <div class="card">
-        <div class="body-card">
-          <h3 class="text-primary" style="font-family: 'Kdam Thmor Pro', sans-serif;">Sertifikat Skill</h3>
-          <select name="OptionKompetensi" id="OptionKompetensi" onclick="TampilkanSertifikat()">
-            <option value="HTML" onclick="TampilkanSertifikat()">HTML</option>
-            <option value="CSS" onclick="TampilkanSertifikat()">CSS</option>
-            <option value="JavaScript" onclick="TampilkanSertifikat()">JavaScript</option>
-            <option value="Python" onclick="TampilkanSertifikat()">Python</option>
-            <option value="BE" onclick="TampilkanSertifikat()">Back End(nodejs)</option>
-            <option value="aws" onclick="TampilkanSertifikat()">Dasar aws</option>
-          </select>
-          <button class="btn-primary" type="submit" onclick="TampilkanSertifikat()">Lihat</button>
-        <div id="OutputSertifikat" class="mt-4 goncangan"></div>
-        <script type="text/javascript" charset="utf-8">
-          TampilkanSertifikat();
-        </script>
-      </div>
-    </div>
-  </section>
-  <!-- Produk -->
-  <section id="Produk" style="height: 60px;"></section>
-  <section class=" p-4 pt-4 mt-5 container">
-    <h1 class="text-primary text-center" style="font-family: 'Kdam Thmor Pro', sans-serif;">PRODUK</h1>
-    <div class="row mb-5 mt-5 justify-content-evenly text-center">
-      <div class="col-sm-5">
-        <div class="card mt-5 mb-5" data-aos="fade-up">
-          <img src="belajar.png" class="card-img-top" alt="Portofolio">
-          <div class="card-body">
-            <h5 class="card-title">Paket Silver</h5>
-            <p class="card-text">
-              silver
-            </p>
-            <a href="#" onclick="OrderNow()" class="btn btn-primary">Order Now</a>
-          </div>
+      <!-- media sosial -->
+      <section class="mediaSosial text-center d-flex justify-content-center">
+        <div class="medsos">
+          <a class="instagram" href="https://instagram.com/moh.solehuddin001" about="_blank" ><img src="./icon/instagram.svg" alt="instagram logo" /></a>
+          <a class="youtube" href="https://youtube.com/@msytc-code" about="_blank"><img src="./icon/youtube.svg" alt="youtube logo" /></a>
+          <a class="tiktok" href="https://vm.tiktok.com/ZSNM8ctvS" about="_blank"><img src="./icon/tiktok.svg" alt="tiktok logo" /></a>
+          <a class="github" href="https://github.com/MohSolehuddin" about="_blank"><img src="./icon/github.svg" alt="github logo" /></a>
         </div>
-      </div>
-      
-      <div class="col-sm-5">
-        <div class="card mt-5 mb-5" data-aos="fade-up" data-aos-delay="200">
-          <img src="belajar.png" class="card-img-top" alt="Portofolio">
-          <div class="card-body">
-            <h5 class="card-title">Paket Gold</h5>
-            <p class="card-text">
-              gold
-            </p>
-            <a href="#" onclick="OrderNow()" class="btn btn-primary">Order Now</a>
-          </div>
-        </div>
-      </div>
-      
-      <div class="col-sm-5">
-        <div class="card mt-5 mb-5" data-aos="fade-up" data-aos-delay="300">
-          <img src="belajar.png" class="card-img-top" alt="Portofolio">
-          <div class="card-body">
-            <h5 class="card-title">Paket Premium</h5>
-            <p class="card-text">
-              Silver
-            </p>
-            <a href="#" onclick="OrderNow()" class="btn btn-primary">Order Now</a>
-          </div>
-        </div>
-      </div>
-      
-      <div class="col-sm-5">
-        <div class="card mt-5 mb-5" data-aos="fade-up" data-aos-delay="400">
-          <img src="belajar.png" class="card-img-top" alt="Portofolio">
-          <div class="card-body">
-            <h5 class="card-title">Paket Daimond</h5>
-            <p class="card-text">
-              Daimond
-            </p>
-            <a href="#" onclick="OrderNow()" class="btn btn-primary">Order Now</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-sm-5">
-        <div class="card mt-5 mb-5" data-aos="fade-up" data-aos-delay="500">
-          <img src="belajar.png" class="card-img-top" alt="Portofolio">
-          <div class="card-body">
-            <h5 class="card-title">Paket Daimond</h5>
-            <p class="card-text">
-              VIP
-            </p>
-            <a href="#" onclick="OrderNow()" class="btn btn-primary">Order Now</a>
-          </div>
-        </div>
-      </div>
-      
-      <div class="col-sm-5">
-        <div class="card mt-5 mb-5" data-aos="fade-up" data-aos-delay="600">
-          <img src="belajar.png" class="card-img-top" alt="Portofolio">
-          <div class="card-body">
-            <h5 class="card-title">Paket Daimond</h5>
-            <p class="card-text">
-              VVIP
-            </p>
-            <a href="#" onclick="OrderNow()" class="btn btn-primary">Order Now</a>
-          </div>
-        </div>
-      </div>
-    </section>
-    
-    
-  </main>
-  <footer class="footer pb-4">
-    <img src="property/end.svg" alt="akhiran website" class="end">
-      <section class="mediaSosial text-center d-flex justify-content-evenly">
-        <a href="#"><img src="property/yt.svg" alt="YouTube" /></a>
-        <a href="#"><img src="property/yt.svg" alt="YouTube" /></a>
-        <a href="#"><img src="property/yt.svg" alt="YouTube" /></a>
-        <a href="#"><img src="property/yt.svg" alt="YouTube" /></a>
-        <a href="#"><img src="property/yt.svg" alt="YouTube" /></a>
-        <a href="#"><img src="property/yt.svg" alt="YouTube" /></a>
       </section>
-    </footer>
+      <!-- tentang saya / about me-->
+      <section class="aboutMe d-flex justify-content-around mt-5 mb-5">
+        <!-- Experient -->
+        <div class="exp">
+          <h5><strong>Experient</strong></h5>
+          <p><i class="keterangan" id="exp"></i></p>
+        </div>
+        <!-- Project -->
+        <div class="totalProject">
+          <h5><strong>Projects</strong></h5>
+          <p><i class="keterangan" id="complete-project">15 complete project</i></p>
+        </div>
+        <!-- more -->
+        <div class="more">
+          <h5><strong>More</strong></h5>
+          <p><i class="keterangan" id="complete-project"><a href="https://msytc.vercel.app/more/">More About Me</a></i></p>
+        </div>
+      </section>
+      <!-- tombol untuk setiap tampilan -->
+      <section class="btn-group d-flex justify-content-evenly mt-4">
+        <button class="custom-btn p-2" id="portofolioButton" type="submit" onclick="printPortofolio()">Portofolio</button>
+        <button class="custom-btn p-2" id="skillsButton"type="submit" onclick="printSkill()">Skills</button>
+        <button class="custom-btn p-2" id="productButton" type="submit" onclick="printProduct()">Product</button>
+      </section>
+    </section>
+    <div class="background"></div>
+    <img src="property/start.svg" alt="">
+    <section class="output" id="output">
+    </section>
+  </main>
+  <!-- Setup library typing -->
+  <script>
+  let typed = new Typed('.typing', {
+    strings: ['Front End Web Developer.','Back End Web Developer.','Full Stack Web Developer.','Content Creator.'],
+    delay: 1000,
+    typeSpeed: 60,
+    backSpeed: 30,
+    loop: true,
+  });
+  let mohSolehuddin = new Typed('.MOH-SOLEHUDDIN', {
+  strings: ['MSYTC','MOH. SOLEHUDDIN'],
+  startDelay: 900,
+  typeSpeed: 90,
+  backSpeed: 200,
+  });
+      const portfolioButton = document.getElementById('portofolioButton');
+      const productButton = document.getElementById('productButton');
+      const skillsButton = document.getElementById('skillsButton');
+      portfolioButton.addEventListener('click', () => {
+      portfolioButton.classList.add('active');
+      productButton.classList.remove('active');
+      skillsButton.classList.remove('active');
+    });
+    
+    productButton.addEventListener('click', () => {
+      productButton.classList.add('active');
+      portfolioButton.classList.remove('active');
+      skillsButton.classList.remove('active');
+    });
+
+    skillsButton.addEventListener('click', () => {
+      skillsButton.classList.add('active');
+      portfolioButton.classList.remove('active');
+      productButton.classList.remove('active');
+    });
+    animationScrollReveal(500, ['main', '.profil-blob', '.logo', '.my-name', '#profesi', '.mediaSosial', '.aboutMe', '.custom-btn',])
+    exp();
+    </script>
+
   </body>
 </html>
